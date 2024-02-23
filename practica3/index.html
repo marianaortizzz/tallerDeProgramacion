@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        button{
+            display: inline-block;
+            min-width: fit-content;
+            min-height: fit-content;
+            height: 10vh;
+            width: 10vw;
+            font-size: 1.5em;
+            border-radius: 20%;
+            border: none;
+            font-family: "Kode Mono", monospace;
+        }
+        .button-on{
+            background-color: red !important;
+        }
+        .button-off{
+            background-color: green;
+        }
+        .show{
+            height: 50vh !important; 
+        }
+        .not-show{
+            height: 0px;
+        }
+        h1{
+            font-family: "Kode Mono", monospace;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Proyecto 3</h1>
+    <center><button class="button-off">Show image</button></center>
+    <center><img src="salleIA.png" class="not-show" alt="Imagen de Adobe"></center>
+    <script>
+        document.querySelector('button').addEventListener('click', () => {
+            console.log("Click");
+            document.querySelector('img').classList.toggle("not-show");
+            document.querySelector('button').classList.toggle("button-on");
+            document.querySelector('button').innerHTML = document.querySelector('img').classList.contains("not-show") ? "Show image" : "Hide image";
+        });
+    </script>
+</body>
+</html>
