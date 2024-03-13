@@ -30,6 +30,21 @@
             return resultado;
         }
         console.log(miFunction('hola', 'Pepe', 30));
+
+        let resultado2 = miFuncion`Hola ${persona} buenos dias tienes ${edad} años`;
+        console.log(resultado2);
+ 
+        let titulo = "Ganadores Oscares";
+        let cantantes = ["Billie Elish", "Lady Gaga", "Adele"];
+        let cadenaHTML = `<h1>${titulo}</h1>`
+ 
+        cadenaHTML += `<ul>`;
+        for(let cantante of cantantes){
+            cadenaHTML += `<li>${cantante}</li>`;
+        }
+        cadenaHTML += `</ul>`;
+ 
+        lista.innerHTML = cadenaHTML;
     </script>
 </body>
 </html>
