@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 5 Template Strings</title>
+</head>
+<body>
+    <h1 id="lista">Proyecto 5</h1>
+    <p>Este es el proyecto 5</p>
+    <script>
+        let lista = document.getElementById('lista');
+        let texto= 'Hola mi nombre es Mariana y soy estudiante de la carrera de Ingeniería de Software';
+        console.log(texto);
+        //Las comillas inversas demuestran los template string que permiten crear cadenas de texto con saltos de línea, operaciones, variables
+        let texto2 = `Hola mi 
+        nombre es Mariana y soy
+        estudiante de la carrera de Ingeniería de Software`;
+        console.log(texto2);
+        let a = 5;
+        //como pongo la comilla inversa en el texto: con el backslash \
+        let b = 10;
+        let texto3 = `La suma de ${a} + ${b} es ${a+b}`;
+        console.log(texto3);
+
+        function miFunction(cadenas, personaX, edadExp){
+            //return cadenas[0] + personaX + cadenas[1] + edadExp; 
+            let reultado= "";
+            edadExp>18 ? resultado="mayor de edad": resultado="menor de edad";
+            return resultado;
+        }
+        console.log(miFunction('hola', 'Pepe', 30));
+    </script>
+</body>
+</html>
