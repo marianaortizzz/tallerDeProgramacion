@@ -20,7 +20,9 @@
         let a = 5;
         //como pongo la comilla inversa en el texto: con el backslash \
         let b = 10;
-        let texto3 = `La suma de ${a} + ${b} es ${a+b}`;
+        let texto3 = `La suma de ${a} + ${b} es ${a+b}
+        multuplica ${a * b} 
+        y divide ${a / b}`;
         console.log(texto3);
 
         function miFunction(cadenas, personaX, edadExp){
@@ -30,6 +32,8 @@
             return resultado;
         }
         console.log(miFunction('hola', 'Pepe', 30));
+        let persona = "Mariana";
+        let edad = 20;
 
         let resultado2 = miFuncion`Hola ${persona} buenos dias tienes ${edad} años`;
         console.log(resultado2);
