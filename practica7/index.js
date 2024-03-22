@@ -1,6 +1,6 @@
 let resultado = document.getElementById('resultado'); 
 
-function asignar(valor){
+let asignar= (valor)=>{
     //ShortHand 
     resultado.value +=valor;
 }
@@ -9,23 +9,22 @@ function asignar(valor){
 let calcular = () => {
     resultado.value = eval(resultado.value); //eval: recibe una cadena y la evalua como una expresion matematica
 }
-function limpiar(){
+let limpiar= () =>{
     resultado.value = '';
-
 }
 
-function seno(){
+let seno= ()=>{
     resultado.value = Math.sin(resultado.value);
 }
-function coseno(){
+let coseno= ()=>{
     resultado.value = Math.cos(resultado.value);
 }
-function tangente(){
+let tangente= ()=>{
     resultado.value = Math.tan(resultado.value);
 }   
-function cuadrado(){
+let cuadrado= ()=>{
     resultado.value = Math.pow(resultado.value,2);
 }
-function raiz(){
+let raiz= ()=>{
     resultado.value = Math.sqrt(resultado.value);
 }
