@@ -14,13 +14,13 @@ let limpiar= () =>{
 }
 
 let seno= ()=>{
-    resultado.value = Math.sin(resultado.value);
+    resultado.value = Math.sin((resultado.value)*Math.PI/180.0);
 }
 let coseno= ()=>{
-    resultado.value = Math.cos(resultado.value);
+    resultado.value = Math.cos((resultado.value)*Math.PI/180.0);
 }
 let tangente= ()=>{
-    resultado.value = Math.tan(resultado.value);
+    resultado.value = Math.tan((resultado.value)*Math.PI/180.0);
 }   
 let cuadrado= ()=>{
     resultado.value = Math.pow(resultado.value,2);
